@@ -5,9 +5,9 @@ import logic.MDP;
 import org.junit.Before;
 import org.junit.Test;
 
-public class MDPTest {
-
+public class MDPTests {
 	private MDP mdp;
+
 	@Before
 	public void setUp() throws Exception {
 		this.mdp = new MDP();
@@ -16,18 +16,17 @@ public class MDPTest {
 	@Test
 	public void firstTest() {
 		mdp.mdp(0, 0);
-		mdp.mdp(0, 1);	
-		mdp.mdp(0, 2);	
-			
+		mdp.mdp(0, 1);
+		mdp.mdp(0, 2);
+
 		mdp.mdp(1, 0);
 
-		mdp.mdp(1, 2);	
-			
+		mdp.mdp(1, 2);
+
 		mdp.mdp(2, 0);
-		mdp.mdp(2, 1);	
-		mdp.mdp(2, 2);	
-		
-		
+		mdp.mdp(2, 1);
+		mdp.mdp(2, 2);
+
 	}
 
 }
